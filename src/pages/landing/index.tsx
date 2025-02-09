@@ -6,20 +6,13 @@ export default function Landing() {
           <span className="bg-gradient-to-br text-transparent bg-clip-text from-blue-500 via-purple-500 to-pink-400">
             Vite
           </span>
-          +
-          <span className="bg-gradient-to-b text-transparent bg-clip-text from-blue-400 to-blue-600">
-            React
-          </span>
-          +
-          <span className="bg-gradient-to-b text-transparent bg-clip-text from-blue-600 to-blue-800">
-            Typescript
-          </span>{' '}
+          +<span className="bg-gradient-to-b text-transparent bg-clip-text from-blue-400 to-blue-600">React</span>+
+          <span className="bg-gradient-to-b text-transparent bg-clip-text from-blue-600 to-blue-800">Typescript</span>{" "}
           Next Generation Frontend Tooling
         </h1>
 
         <p className="font-semibold text-xl sm:text-3xl text-gray-400 mb-8">
-          Get ready for a development environment <br /> that can finally catch
-          up with you.
+          Get ready for a development environment <br /> that can finally catch up with you.
         </p>
         <a
           href="https://panntod.github.io/Project-Mandiri/linktree"
@@ -31,13 +24,7 @@ export default function Landing() {
 
       <aside className="relative flex justify-center items-center w-full sm:w-auto">
         <figure className="z-10 w-32 sm:w-72 h-auto">
-          <img
-            src="/vite.svg"
-            alt="vite's logo"
-            className="object-contain"
-            width={300}
-            height={300}
-          />
+          <img src="/vite.svg" alt="vite's logo" className="object-contain" width={300} height={300} />
         </figure>
         <div className="absolute w-52 sm:w-96 h-52 sm:h-96 bg-gradient-to-br from-blue-400 via-purple-500 to-pink-400 rounded-full blur-3xl" />
       </aside>

@@ -1,5 +1,5 @@
-import cn from '@/lib/clsx';
-import { useState } from 'react';
+import cn from "@/lib/clsx";
+import { useState } from "react";
 
 export default function Playground() {
   const [count, setCount] = useState(0);
@@ -14,14 +14,7 @@ export default function Playground() {
       >
         -
       </button>
-      <span
-        className={cn(
-          'text-4xl font-semibold text-white',
-          count === 0 && 'text-gray-500'
-        )}
-      >
-        {count}
-      </span>
+      <span className={cn("text-4xl font-semibold text-white", count === 0 && "text-gray-500")}>{count}</span>
       <button
         type="button"
         onClick={() => setCount(count + 1)}
