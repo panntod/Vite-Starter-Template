@@ -1,11 +1,19 @@
 import { ButtonLink } from "@/components/Button";
 import Dropdown from "@/components/Dropdown";
 import { Typography } from "@/components/Typography";
+import { useTranslation } from "react-i18next";
 
 export default function Landing() {
+  const { t, i18n } = useTranslation("landing");
+
+  const changeLanguage = (locales: "en" | "id") => {
+    if (i18n.language !== locales) {
+      i18n.changeLanguage(locales);
+    }
+  };
   const data = [
-    { title: "Indonesia", onClick: () => alert("id_ID") },
-    { title: "English", onClick: () => alert("en_EN") }
+    { title: "Indonesia", onClick: () => changeLanguage("id") },
+    { title: "English", onClick: () => changeLanguage("en") }
   ];
 
   return (
@@ -35,20 +43,20 @@ export default function Landing() {
         </div>
 
         <Typography size="DISPLAY_XL" className="font-bold text-4xl sm:text-6xl text-white">
-          Next Generation Frontend Tooling
+          {t("title")}
         </Typography>
 
         <Typography size="DISPLAY_LG" className="text-wrap text-gray-400 mb-8">
-          Get ready for a development environment that can finally catch up with you.
+          {t("description")}
         </Typography>
 
         <div className="flex gap-2 justify-center sm:justify-start">
           <ButtonLink variant="outlined" href="https://link.pandhuarya.my.id">
-            See Developer Profile
+            {t("button.profile")}
           </ButtonLink>
 
           <Dropdown>
-            <Dropdown.Button variant="solid">Language</Dropdown.Button>
+            <Dropdown.Button variant="solid">{t("button.dropdown")}</Dropdown.Button>
             <Dropdown.Body data={data} />
           </Dropdown>
         </div>

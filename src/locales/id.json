@@ -1,0 +1,10 @@
+{
+    "landing": {
+        "title": "Perkakas Frontend Generasi Terbaru",
+        "description": "Rasakan pengalaman pengembangan yang akhirnya bisa mengikuti ritme kerjamu.",
+        "button": {
+            "profile": "Lihat Profil Developer",
+            "dropdown": "Pilih Bahasa"
+        }
+    }
+}

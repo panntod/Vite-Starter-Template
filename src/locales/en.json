@@ -1,0 +1,10 @@
+{
+    "landing": {
+        "title": "Next Generation Frontend Tooling",
+        "description": "Get ready for a development environment that can finally catch up with you.",
+        "button": {
+            "profile": "See Developer Profile",
+            "dropdown": "Select Language"
+        }
+    }
+}
