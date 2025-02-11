@@ -1,3 +1,4 @@
+import { Tooltip } from "@/components/Tooltip";
 import cn from "@/lib/clsx";
 import { useState } from "react";
 
@@ -14,7 +15,9 @@ export default function Playground() {
       >
         -
       </button>
-      <span className={cn("text-4xl font-semibold text-white", count === 0 && "text-gray-500")}>{count}</span>
+      <Tooltip id="playground-tooltip" renderContent="This is a tooltip" position="top" size="medium">
+        <span className={cn("text-4xl font-semibold text-white", count === 0 && "text-gray-500")}>{count}</span>
+      </Tooltip>
       <button
         type="button"
         onClick={() => setCount(count + 1)}
