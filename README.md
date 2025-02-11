@@ -12,6 +12,8 @@ A blazing-fast, modern, and highly customizable starter template for building Re
 - 🧹 `Prettier & ESLint`: Clean, consistent, and error-free code with integrated formatting and linting.
 - 🐶 `Husky`: Git hooks for pre-commit linting and formatting.
 - 📦 `Optimized Imports`: Path aliases for cleaner imports (e.g., @/components/Button).
+- 🌍 `i18n (react-i18next)`: Built-in internationalization support for multi-language applications.
+- 🎭 `class-variance-authority (cva)`: Powerful utility for managing Tailwind component variants dynamically.
 
 ## ❓ Why Use This Template?
 
