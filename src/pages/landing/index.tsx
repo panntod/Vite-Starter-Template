@@ -17,7 +17,7 @@ export default function Landing() {
   ];
 
   return (
-    <main className="h-screen w-screen flex flex-col-reverse sm:flex-row justify-center items-center bg-gray-900 gap-24 px-4 sm:px-0">
+    <main className="min-h-screen w-screen flex flex-col-reverse lg:flex-row justify-center items-center bg-gray-900 gap-24 px-4 sm:px-0">
       <section className="w-full sm:w-[630px] space-y-2">
         <div className="flex flex-wrap sm:flex-nowrap items-center gap-0 sm:gap-4">
           <Typography
@@ -50,13 +50,15 @@ export default function Landing() {
           {t("description")}
         </Typography>
 
-        <div className="flex gap-2 justify-center sm:justify-start">
+        <div className="flex flex-col lg:flex-row gap-2 justify-center sm:justify-start">
           <ButtonLink variant="outlined" href="https://link.pandhuarya.my.id">
             {t("button.profile")}
           </ButtonLink>
 
           <Dropdown>
-            <Dropdown.Button variant="solid">{t("button.dropdown")}</Dropdown.Button>
+            <Dropdown.Button className="w-full lg:w-auto" variant="solid">
+              {t("button.dropdown")}
+            </Dropdown.Button>
             <Dropdown.Body data={data} />
           </Dropdown>
         </div>

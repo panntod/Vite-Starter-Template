@@ -1,7 +1,7 @@
 import { cva } from "class-variance-authority";
 
 export const buttonVariants = cva(
-  "px-6 py-3 rounded-full transition duration-300 ease-in-out transform hover:scale-105",
+  "px-6 py-3 inline-flex items-center rounded-full transition duration-300 ease-in-out transform hover:scale-105",
   {
     variants: {
       variant: {

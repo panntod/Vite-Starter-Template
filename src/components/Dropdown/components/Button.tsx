@@ -4,14 +4,18 @@ import { PropsWithChildren, useContext } from "react";
 import { DropdownContext } from "../store/Dropdown.context";
 import { DropdownButtonProps } from "../types/Dropdown.type";
 
-export const DropdownButton = ({ children, variant = "outlined" }: PropsWithChildren<DropdownButtonProps>) => {
+export const DropdownButton = ({
+  children,
+  variant = "outlined",
+  className = ""
+}: PropsWithChildren<DropdownButtonProps>) => {
   const context = useContext(DropdownContext);
   if (!context) throw new Error("DropdownButton must be used within a Dropdown");
   const { setIsOpen } = context;
 
   return (
     <Button
-      className="inline-flex items-center"
+      className={cn("justify-between", className)}
       variant={variant}
       id="dropdownDefaultButton"
       onClick={() => setIsOpen(prev => !prev)}

@@ -12,4 +12,6 @@ export interface DropdownContextProps {
   setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-export type DropdownButtonProps = VariantProps<typeof buttonVariants>;
+export interface DropdownButtonProps extends VariantProps<typeof buttonVariants> {
+  className?: string;
+}
