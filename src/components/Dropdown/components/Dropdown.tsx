@@ -1,19 +1,37 @@
-import { ReactNode, useState } from "react";
-import { DropdownContext } from "../store/Dropdown.context";
+import { ReactNode, useEffect, useRef, useState } from "react";
+import { DropdownContext } from "../store/dropdown";
 import { DropdownBody } from "./Body";
 import { DropdownButton } from "./Button";
 
-const DropdownComponent = ({ children }: { children: ReactNode }) => {
+const Dropdown = ({ children }: { children: ReactNode }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setIsOpen(false);
+      }
+    };
+
+    if (isOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isOpen]);
 
   return (
     <DropdownContext.Provider value={{ isOpen, setIsOpen }}>
-      <div className="relative inline-block">{children}</div>
+      <div ref={dropdownRef} className="relative inline-block">
+        {children}
+      </div>
     </DropdownContext.Provider>
   );
 };
 
-export const Dropdown = Object.assign(DropdownComponent, {
-  Button: (() => null) as unknown as typeof DropdownButton,
-  Body: (() => null) as unknown as typeof DropdownBody
-});
+Dropdown.Button = DropdownButton;
+Dropdown.Body = DropdownBody;
+
+export default Dropdown;

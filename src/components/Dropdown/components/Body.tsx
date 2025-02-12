@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { DropdownContext } from "../store/Dropdown.context";
+import { DropdownContext } from "../store/dropdown";
 import { DropdownBodyProps } from "../types/Dropdown.type";
 
 export const DropdownBody = ({ data, children }: DropdownBodyProps) => {
