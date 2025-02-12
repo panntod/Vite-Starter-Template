@@ -5,6 +5,7 @@
         "button": {
             "profile": "Lihat Profil Developer",
             "dropdown": "Pilih Bahasa"
-        }
+        },
+        "toast": "Bahasa telah diubah!"
     }
 }

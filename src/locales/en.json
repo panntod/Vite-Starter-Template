@@ -5,6 +5,7 @@
         "button": {
             "profile": "See Developer Profile",
             "dropdown": "Select Language"
-        }
+        },
+        "toast": "Language has been changed!"
     }
 }
