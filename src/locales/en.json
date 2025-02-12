@@ -7,5 +7,46 @@
             "dropdown": "Select Language"
         },
         "toast": "Language has been changed!"
+    },
+    "faq": {
+        "title": "Frequently Asked Questions",
+        "accordion": [
+            {
+                "title": "What is this starter template for?",
+                "content": "This starter template is designed to help developers quickly set up a modern React project using Vite, Tailwind CSS, and other best practices. It provides a solid foundation with optimized configurations and useful tools."
+            },
+            {
+                "title": "What is the difference between the advanced and lightweight templates?",
+                "content": "The advanced template includes TypeScript, Jotai for state management, react-i18next for internationalization, class-variance-authority for styling, and additional tools like ESLint, Prettier, and Husky. The lightweight template is simpler, using JavaScript and focusing on a minimal yet powerful setup."
+            },
+            {
+                "title": "Who should use this template?",
+                "content": "This template is perfect for developers who want to build React applications efficiently. Whether you're a beginner looking for a structured starting point or an experienced developer needing a scalable setup, this template has you covered."
+            },
+            {
+                "title": "How do I get started with this template?",
+                "content": "You can use the template by clicking 'Use this template' on GitHub to create a new repository. Then, clone the repository, install dependencies using `pnpm install`, and you're ready to start coding!"
+            },
+            {
+                "title": "Can I customize this template?",
+                "content": "Yes! You can modify the Tailwind configuration, update routing, add your own components, and extend it as needed. The template is built to be flexible and customizable."
+            },
+            {
+                "title": "Does this template support internationalization?",
+                "content": "Yes! The advanced template includes built-in support for internationalization using react-i18next, making it easy to manage multiple languages in your project."
+            },
+            {
+                "title": "How is state management handled?",
+                "content": "The advanced template uses Jotai, a minimal and flexible state management library, allowing for simple and scalable state handling."
+            },
+            {
+                "title": "Can I contribute to this project?",
+                "content": "Absolutely! This project is open-source, and contributions are welcome. Feel free to submit issues, suggest improvements, or create pull requests on GitHub."
+            },
+            {
+                "title": "Is this template free to use?",
+                "content": "Yes! This template is open-source and available under the MIT License, meaning you can use, modify, and distribute it freely."
+            }
+        ]
     }
 }

@@ -4,7 +4,7 @@ import { useToast } from "@/components/Toast";
 import { Typography } from "@/components/Typography";
 import { useTranslation } from "react-i18next";
 
-export default function Landing() {
+const Landing = () => {
   const { t, i18n } = useTranslation("landing");
   const { addToast } = useToast();
 
@@ -21,36 +21,34 @@ export default function Landing() {
   ];
 
   return (
-    <main className="min-h-screen w-screen flex flex-col-reverse lg:flex-row justify-center items-center bg-gray-900 gap-24 px-4 sm:px-0">
+    <section className="min-h-screen w-full flex flex-col-reverse lg:flex-row justify-center items-center gap-12 sm:gap-24 px-4 sm:px-0">
       <section className="w-full sm:w-[630px] space-y-2">
-        <div className="flex flex-wrap sm:flex-nowrap items-center gap-0 sm:gap-4">
+        <div className="flex flex-wrap lg:flex-nowrap items-center gap-0 sm:gap-4">
           <Typography
-            size="DISPLAY_XL"
-            className="font-bold text-4xl sm:text-6xl bg-gradient-to-br text-transparent bg-clip-text from-blue-500 via-purple-500 to-pink-400"
+            size="DISPLAY_3XL"
+            className="bg-gradient-to-br text-transparent bg-clip-text from-blue-500 via-purple-500 to-pink-400"
           >
             Vite
           </Typography>
           <span className="text-white text-3xl sm:text-5xl font-bold">+</span>
           <Typography
-            size="DISPLAY_XL"
-            className="font-bold text-4xl sm:text-6xl bg-gradient-to-b text-transparent bg-clip-text from-blue-400 to-blue-600"
+            size="DISPLAY_3XL"
+            className="bg-gradient-to-b text-transparent bg-clip-text from-blue-400 to-blue-600"
           >
             React
           </Typography>
           <span className="text-white text-3xl sm:text-5xl font-bold">+</span>
           <Typography
-            size="DISPLAY_XL"
-            className="font-bold text-4xl sm:text-6xl bg-gradient-to-b text-transparent bg-clip-text from-blue-600 to-blue-800"
+            size="DISPLAY_3XL"
+            className="bg-gradient-to-b text-transparent bg-clip-text from-blue-600 to-blue-800 leading-[140%]"
           >
             Typescript
           </Typography>
         </div>
 
-        <Typography size="DISPLAY_XL" className="font-bold text-4xl sm:text-6xl text-white">
-          {t("title")}
-        </Typography>
+        <Typography size="DISPLAY_2XL">{t("title")}</Typography>
 
-        <Typography size="DISPLAY_LG" className="text-wrap text-gray-400 mb-8">
+        <Typography size="DISPLAY_XL" className="text-wrap text-gray-400 mb-4 sm:mb-8">
           {t("description")}
         </Typography>
 
@@ -74,6 +72,8 @@ export default function Landing() {
         </figure>
         <div className="absolute w-52 sm:w-96 h-52 sm:h-96 bg-gradient-to-br from-blue-400 via-purple-500 to-pink-400 rounded-full blur-3xl" />
       </aside>
-    </main>
+    </section>
   );
-}
+};
+
+export default Landing;

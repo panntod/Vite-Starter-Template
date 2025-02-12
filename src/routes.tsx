@@ -1,12 +1,13 @@
+import { lazy } from "react";
 import { createBrowserRouter, Navigate } from "react-router-dom";
 
-import Landing from "./pages/landing";
-import Playground from "./pages/playground";
+const Home = lazy(() => import("./pages/home"));
+const Playground = lazy(() => import("./pages/playground"));
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Landing />
+    element: <Home />
   },
   {
     path: "/playground",

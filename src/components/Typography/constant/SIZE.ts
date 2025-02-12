@@ -1,5 +1,13 @@
 export const SIZE_VARIANT = {
   // Display
+  DISPLAY_3XL: {
+    className: "text-[36px] sm:text-[52px] leading-[100%] font-bold",
+    tag: "h1"
+  },
+  DISPLAY_2XL: {
+    className: "text-[28px] sm:text-[48px] leading-[100%] font-bold",
+    tag: "h1"
+  },
   DISPLAY_XL: {
     className: "text-[22px] sm:text-[30px] leading-[150%] font-semibold",
     tag: "h1"

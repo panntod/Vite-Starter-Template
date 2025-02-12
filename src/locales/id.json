@@ -7,5 +7,46 @@
             "dropdown": "Pilih Bahasa"
         },
         "toast": "Bahasa telah diubah!"
+    },
+    "faq": {
+        "title": "Pertanyaan yang Sering Diajukan",
+        "accordion": [
+            {
+                "title": "Apa tujuan dari starter template ini?",
+                "content": "Starter template ini dirancang untuk membantu developer dengan cepat menyiapkan proyek React modern menggunakan Vite, Tailwind CSS, dan praktik terbaik lainnya. Template ini memberikan fondasi yang kuat dengan konfigurasi yang telah dioptimalkan serta alat-alat yang berguna."
+            },
+            {
+                "title": "Apa perbedaan antara template advanced dan lightweight?",
+                "content": "Template advanced mencakup TypeScript, Jotai untuk state management, react-i18next untuk internasionalisasi, class-variance-authority untuk styling, serta alat tambahan seperti ESLint, Prettier, dan Husky. Sementara itu, template lightweight lebih sederhana, menggunakan JavaScript dan berfokus pada setup minimal namun tetap bertenaga."
+            },
+            {
+                "title": "Siapa yang sebaiknya menggunakan template ini?",
+                "content": "Template ini cocok untuk developer yang ingin membangun aplikasi React dengan efisien. Baik Anda pemula yang mencari struktur awal yang rapi maupun developer berpengalaman yang membutuhkan setup yang skalabel, template ini bisa menjadi pilihan yang tepat."
+            },
+            {
+                "title": "Bagaimana cara memulai dengan template ini?",
+                "content": "Anda dapat menggunakan template ini dengan mengklik 'Use this template' di GitHub untuk membuat repository baru. Setelah itu, clone repository tersebut, instal dependensi menggunakan `pnpm install`, dan Anda siap untuk mulai coding!"
+            },
+            {
+                "title": "Apakah saya bisa menyesuaikan template ini?",
+                "content": "Tentu saja! Anda bisa memodifikasi konfigurasi Tailwind, mengupdate routing, menambahkan komponen sendiri, dan memperluasnya sesuai kebutuhan. Template ini dibuat agar fleksibel dan mudah disesuaikan."
+            },
+            {
+                "title": "Apakah template ini mendukung internasionalisasi?",
+                "content": "Ya! Template advanced sudah memiliki dukungan bawaan untuk internasionalisasi menggunakan react-i18next, sehingga Anda dapat dengan mudah mengelola banyak bahasa dalam proyek Anda."
+            },
+            {
+                "title": "Bagaimana cara mengelola state di dalam template ini?",
+                "content": "Template advanced menggunakan Jotai, sebuah library state management yang minimalis dan fleksibel, memungkinkan pengelolaan state yang sederhana namun tetap skalabel."
+            },
+            {
+                "title": "Apakah saya bisa berkontribusi pada proyek ini?",
+                "content": "Tentu! Proyek ini bersifat open-source dan kontribusi sangat diterima. Anda bisa mengajukan issue, memberikan saran perbaikan, atau membuat pull request langsung di GitHub."
+            },
+            {
+                "title": "Apakah template ini gratis digunakan?",
+                "content": "Ya! Template ini bersifat open-source dan tersedia di bawah lisensi MIT, yang berarti Anda bebas menggunakannya, memodifikasinya, dan mendistribusikannya."
+            }
+        ]
     }
 }
