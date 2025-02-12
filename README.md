@@ -1,5 +1,7 @@
 # 🚀 Vite + React + Tailwindcss + Typescript Starter Template
 
+![Vite-Starter-Template](https://raw.githubusercontent.com/panntod/Vite-Starter-Template/refs/heads/master/public/preview.png)
+
 A blazing-fast, modern, and highly customizable starter template for building React applications with Vite, Tailwindcss, React Router, and Typescript. This project is designed to kickstart your development process with the best tools and practices, ensuring a smooth and efficient workflow.
 
 ## ✨ Features
@@ -14,6 +16,9 @@ A blazing-fast, modern, and highly customizable starter template for building Re
 - 📦 `Optimized Imports`: Path aliases for cleaner imports (e.g., @/components/Button).
 - 🌍 `i18n (react-i18next)`: Built-in internationalization support for multi-language applications.
 - 🎭 `class-variance-authority (cva)`: Powerful utility for managing Tailwind component variants dynamically.
+- 🔗 `Jotai`: Lightweight and flexible state management for React.
+- 🖼️ `Lucide-react`: Beautifully designed icon library for modern UIs.
+- 🔢 `UUID`: Unique ID generation for managing dynamic components.
 
 ## ❓ Why Use This Template?
 
@@ -27,6 +32,9 @@ A blazing-fast, modern, and highly customizable starter template for building Re
 - **Frontend**: React 18, React Router 7
 - **Styling**: Tailwind CSS 3
 - **Build** Tool: Vite 5
+- **State Management**: Jotai
+- **Icons**: Lucide React
+- **Unique ID Generation**: UUID
 - **Linting**: ESLint + Prettier
 - **Routing**: React Router DOM
 - **Tooling**: Husky, SWC, TypeScript
