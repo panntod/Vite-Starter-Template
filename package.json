@@ -30,12 +30,15 @@
     "clsx": "^2.1.1",
     "i18next": "^24.2.2",
     "i18next-browser-languagedetector": "^8.0.2",
+    "jotai": "^2.12.0",
+    "lucide-react": "^0.475.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-i18next": "^15.4.0",
     "react-router-dom": "^7.1.4",
     "tailwind-merge": "^3.0.1",
-    "tailwindcss": "^4.0.1"
+    "tailwindcss": "^4.0.1",
+    "uuid": "^11.0.5"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
