@@ -1,11 +1,11 @@
 export const SIZE_VARIANT = {
   // Display
   DISPLAY_3XL: {
-    className: "text-[36px] sm:text-[52px] leading-[100%] font-bold",
+    className: "text-[32px] sm:text-[48px] lg:text-[52px] leading-[100%] font-bold",
     tag: "h1"
   },
   DISPLAY_2XL: {
-    className: "text-[28px] sm:text-[48px] leading-[100%] font-bold",
+    className: "text-[26px] sm:text-[42px] lg:text-[46px] leading-[100%] font-bold",
     tag: "h1"
   },
   DISPLAY_XL: {

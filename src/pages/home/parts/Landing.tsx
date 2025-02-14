@@ -23,7 +23,7 @@ const Landing = () => {
   return (
     <section className="min-h-screen w-full flex flex-col-reverse lg:flex-row justify-center items-center gap-12 sm:gap-24 px-4 sm:px-0">
       <section className="w-full sm:w-[630px] space-y-2">
-        <div className="flex flex-wrap lg:flex-nowrap items-center gap-0 sm:gap-4">
+        <div className="flex flex-wrap lg:flex-nowrap items-center justify-center lg:justify-start gap-0 sm:gap-4">
           <Typography
             size="DISPLAY_3XL"
             className="bg-gradient-to-br text-transparent bg-clip-text from-blue-500 via-purple-500 to-pink-400"
